@@ -6,6 +6,10 @@ function Theme() {
       element.classList.remove('text-dark');
     });
     document.getElementById('submit').style.backgroundColor = '#2980B9';
+
+    Array.from(document.getElementsByClassName('child')).forEach((element) => {
+      element.style.border = '1px solid white';
+    });
     document.getElementById('navbar').classList.add('bg-dark');
     document.getElementById('navbar').classList.add('navbar-dark');
     Array.from(document.getElementsByClassName('text')).forEach((element) => {
@@ -21,6 +25,10 @@ function Theme() {
       element.classList.remove('text-light');
     });
     document.getElementById('submit').style.backgroundColor = 'green';
+
+    Array.from(document.getElementsByClassName('child')).forEach((element) => {
+      element.style.border = '1px solid black';
+    });
     document.getElementById('navbar').classList.add('bg-light');
     document.getElementById('navbar').classList.add('navbar-light');
     Array.from(document.getElementsByClassName('text')).forEach((element) => {

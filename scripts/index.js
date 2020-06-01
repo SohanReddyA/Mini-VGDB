@@ -12,6 +12,9 @@ function theme() {
     Array.from(document.getElementsByClassName('text')).forEach((element) => {
       element.classList.add('text-light');
     });
+    Array.from(document.getElementsByClassName('child')).forEach((element)=>{
+      element.style.border='1px solid white';
+    });
   }
 }
 function games(search) {
