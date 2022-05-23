@@ -21,7 +21,7 @@ function games(search) {
   document.getElementById('results').innerHTML = '';
   document.getElementById('desc').innerHTML = '';
   axios
-    .get('https://api.rawg.io/api/games?key=2cf0405a8122479aa43424aef04d2011&search=' + search)
+    .get('https://api.rawg.io/api/games?key=95d4e79ee1304d01818a286fc1e331aa&search=' + search)
     .then((res) => {
       console.log(res);
       let games = res.data.results;
@@ -46,7 +46,7 @@ function games(search) {
 function desc(id) {
   document.getElementById('results').innerHTML = '';
   document.getElementById('desc').innerHTML = '';
-  axios.get('https://api.rawg.io/api/games/' + id+'?key=2cf0405a8122479aa43424aef04d2011').then((res) => {
+  axios.get('https://api.rawg.io/api/games/' + id+'?key=95d4e79ee1304d01818a286fc1e331aa').then((res) => {
     console.log(res);
     let desc = res.data;
     let platforms = '';
